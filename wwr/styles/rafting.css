@@ -73,6 +73,11 @@ p {
 .socaillinks a {
   text-decoration: none;
 }
+.sociallinks a img {
+  width: 30px;
+  height: auto;
+  margin: 0 5px;
+}
 
 footer {
   background-color: var(--primary-color);
