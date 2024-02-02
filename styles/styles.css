@@ -83,3 +83,9 @@ footer {
     background-color: #ddd;
     color: #000;
 }
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 10px auto;
+}
+
