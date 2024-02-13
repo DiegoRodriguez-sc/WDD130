@@ -174,3 +174,95 @@ footer {
   width: 30px;
   height: auto;
 }
+
+/* New CSS for Contact Us page */
+
+/* Contact Information Section Styles */
+.contact {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.contact h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Employee Section Styles */
+.employees {
+  text-align: center;
+  padding: 20px;
+}
+
+.employees h2 {
+  margin-bottom: 20px;
+}
+
+.employees figure {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.employees img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Form Section Styles */
+.message {
+  text-align: center;
+  padding: 20px;
+}
+
+.message h2 {
+  margin-bottom: 20px;
+}
+
+.message form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.message label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.message input[type="text"],
+.message input[type="email"],
+.message textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.message button[type="submit"] {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message button[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
