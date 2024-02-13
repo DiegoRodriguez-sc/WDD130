@@ -303,3 +303,67 @@ iframe {
   display: inline-block;
   margin-right: 15px;
 }
+
+.message input[type="radio"],
+.message input[type="checkbox"] {
+  display: none;
+}
+
+.message input[type="radio"] + label,
+.message input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.message input[type="radio"] + label:before,
+.message input[type="checkbox"] + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.message input[type="radio"]:checked + label:before {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+.message input[type="checkbox"]:checked + label:before {
+  background-color: var(--primary-color);
+}
+
+.message input[type="radio"] + label:after,
+.message input[type="checkbox"] + label:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.message input[type="radio"]:checked + label:after,
+.message input[type="checkbox"]:checked + label:after {
+  display: block;
+}
+
+.message input[type="radio"]:checked + label:after {
+  left: 8px;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+}
+
+.message input[type="checkbox"]:checked + label:after {
+  left: 6px;
+  top: 10px;
+  width: 8px;
+  height: 4px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
