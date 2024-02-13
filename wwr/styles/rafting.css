@@ -266,3 +266,40 @@ footer {
 .message button[type="submit"]:hover {
   background-color: var(--secondary-color);
 }
+
+iframe {
+  border: 0;
+}
+.message input[type="text"]:focus,
+.message input[type="email"]:focus,
+.message textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.message input[type="checkbox"]:focus {
+  outline: auto var(--primary-color);
+}
+
+.message button[type="submit"]:active {
+  background-color: var(--tertiary-color);
+}
+
+.message input::placeholder,
+.message textarea::placeholder {
+  color: var(--placeholder-color);
+}
+
+.message input:invalid,
+.message textarea:invalid {
+  border-color: var(--error-color);
+}
+
+.message input[type="radio"] {
+  margin-right: 5px;
+}
+
+.message label.radio-label {
+  display: inline-block;
+  margin-right: 15px;
+}

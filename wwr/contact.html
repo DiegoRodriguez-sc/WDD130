@@ -6,7 +6,7 @@
     <meta name="description" content="Contact Rafting Dry Oar for Unforgettable Rafting Experiences">
     <meta name="author" content="Diego Rodriguez">
     <link rel="stylesheet" href="styles/rafting.css">
-    <title>Contact Us - Rafting Dry Oar</title>
+    <title>Contact - Rafting Dry Oar</title>
 </head>
 <body>
     <header>
@@ -36,7 +36,7 @@
                 Email: info@raftingdryoar.com
             </address>
             <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.073394394073!2d-118.2436846847836!3d34.05223598059847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0x3e3b3e3a3d3d3d!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1607683660003!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.073394394073!2d-118.2436846847836!3d34.05223598059847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0x3e3b3e3a3d3d3d!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1607683660003!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </section>
         <section class="employees">
@@ -56,22 +56,28 @@
         </section>
         <section class="message">
             <h2>Send Us a Message</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="purpose">Purpose of Message:</label><br>
-                <select id="purpose" name="purpose">
-                    <option value="General Inquiry">General Inquiry</option>
-                    <option value="Reservation Question">Reservation Question</option>
-                    <option value="Website Suggestion">Website Suggestion</option>
-                </select><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br>
+            <form>
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username">
+            
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email">
+            
+                <label for="purpose">Propósito del mensaje:</label>
+                <input type="radio" id="generalInquiry" name="purpose" value="generalInquiry">
+                <label for="generalInquiry">Consulta general</label>
+                <input type="radio" id="reservationQuestion" name="purpose" value="reservationQuestion">
+                <label for="reservationQuestion">Pregunta de reserva</label>
+                <input type="radio" id="websiteSuggestion" name="purpose" value="websiteSuggestion">
+                <label for="websiteSuggestion">Sugerencia del sitio web</label>
+            
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message"></textarea>
+            
+                <label for="newsletter">Por favor, suscríbeme al boletín mensual</label>
                 <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter">Subscribe me to the monthly newsletter</label><br>
-                <button type="submit">Submit</button>
+            
+                <button type="submit">Enviar mensaje</button>
             </form>
         </section>
     </main>
